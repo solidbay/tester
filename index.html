@@ -2,10 +2,79 @@
 <html>
     <head>
         <title>My Web Application!</title>
+        <style>
+        	h1{
+        		color:blue;
+        		text-align:center;
+        		font-family: Arial,sans-serif;
+        		font-style:bold;
+        	}
+        	table,p{
+        		width: 50%
+        		height:50px;
+        		color:purple;
+        		font-style:bold;
+        		font-size:12;
+        		background-color:red;
+        		padding:2px;
+        		border:1px solid black;
+        		font-family: Arial,sans-serif;
+        		border-collapse:collapse;
+        	}
+        	th,td,tr{
+        	background-color:lightyellow;
+        	font-family: Arial,sans-serif;
+        	border:2px solid black;
+        	padding:5px;
+        	}
+        	
+        	div{
+        		width:50%;
+        		height:20;
+        		color:green;
+        		border: 3px solid black;
+        	}
+        </style>
     </head>
     <body>
-        <p> A simple web Application
+        <p><h1 style="color:blue;text-align:center"> A simple web Application</h1>
 
         <div>Login</div>
+        <div>
+        <form>
+        	<div>
+        		<input type="text" placeholder="Type in your email" name="email" ></input>
+       		 <p></p>
+       		 </div>
+        	<div>
+        		<textarea placeholder="Leave a comment"></textarea>
+        		<p></p>
+         	</div>
+         	<div>
+         		<button action="submit" align="right">Submit</button>
+        	</div>
+        </form>
+        <ul>
+        	<li>hi</li>
+        	<li>hello</li>
+        </ul>
+        <ol>
+        	<img src="firefox.png" height="100" width="50%">
+        </ol>
+        
+        </div>
+        		<p>HelloWorld</p>
+        <table>
+        	<th>Item</th><th>Price</th>
+        	<tr>
+        		<td>Garri</td>
+        		<td>$5.00</td>
+        	</tr>
+        	<tr>
+        		<td>Yam</td>
+        		<td>$6.00</td>	
+        	</tr>
+        </table>
+
     </body>
 </html>
