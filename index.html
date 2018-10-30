@@ -7,13 +7,13 @@
         		color:blue;
         		text-align:center;
         		font-family: Arial,sans-serif;
-        		font-style:bold;
+        		font-weight:bold;
         	}
         	table,p{
         		width: 50%
         		height:50px;
         		color:purple;
-        		font-style:bold;
+        		font-weight:bold;
         		font-size:12;
         		background-color:red;
         		padding:2px;
@@ -26,6 +26,7 @@
         	font-family: Arial,sans-serif;
         	border:2px solid black;
         	padding:5px;
+        	font-weight:italic;
         	}
         	
         	div{
@@ -34,24 +35,54 @@
         		color:green;
         		border: 3px solid black;
         	}
+        	<!-- # style is an ID style syntax -->
+        	#head {
+        		font-size:42px;
+        	}
+        	
+        	#top {
+        		font-size:36px;
+        	}
+        	
+        	#middle {
+        		font-size:24px;
+        	}
+        	
+        	#button {
+        		font-size:18px;
+        	}
+        	<!-- declaring a class with"."-->
+        	.name{
+        		font-weight:bold;
+        	}
+        	input,textarea {
+        		width=20%;
+        		
+        	}
+        	form{
+        		background-color:lightblue;
+        	}
         </style>
     </head>
     <body>
         <p><h1 style="color:blue;text-align:center"> A simple web Application</h1>
 
-        <div>Login</div>
-        <div>
+        <div id="head">Login</div>
+        <div id="form">
         <form>
-        	<div>
+        	<div id="top">
+        		This is the <span class="name">top</span> of my web page.
         		<input type="text" placeholder="Type in your email" name="email" ></input>
        		 <p></p>
        		 </div>
-        	<div>
+        	<div id="middle">
+        		This is the <span class="name">middle</span> of my web page.
         		<textarea placeholder="Leave a comment"></textarea>
         		<p></p>
          	</div>
-         	<div>
+         	<div id="button">
          		<button action="submit" align="right">Submit</button>
+         		This is the <span class="name">button</span> of my web page.
         	</div>
         </form>
         <ul>
